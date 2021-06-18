@@ -1,6 +1,31 @@
 import React, { Component } from "react";
 
+const encode = (data) => {
+   return Object.keys(data)
+       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+       .join("&");
+ }
+
 class Contact extends Component {
+   constructor(props) {
+      super(props);
+      this.state = { form_name: "", form_email: "", form_subject: "", form_message: "" };
+    }
+
+   handleSubmit = e => {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...this.state })
+      })
+        .then(() => alert("Success!"))
+        .catch(error => alert(error));
+
+      e.preventDefault();
+    };
+
+   handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
   render() {
     if (this.props.data) {
       var name = this.props.data.name;
@@ -12,6 +37,7 @@ class Contact extends Component {
       // var email = this.props.data.email;
       var message = this.props.data.contactmessage;
     }
+    const { form_name, form_email, form_subject, form_message } = this.state;
 
     return (
       <section id="contact">
@@ -29,7 +55,7 @@ class Contact extends Component {
 
         <div className="row">
           <div className="eight columns">
-            <form action="" method="post" id="contactForm" name="contactForm" netlify>
+            <form action="" method="post" id="contactForm" name="contactForm" onSubmit={this.handleSubmit} >
               <fieldset>
                 <div>
                   <label htmlFor="contactName">
@@ -41,6 +67,7 @@ class Contact extends Component {
                     size="35"
                     id="contactName"
                     name="contactName"
+                    value={form_name}
                     onChange={this.handleChange}
                   />
                 </div>
@@ -55,6 +82,7 @@ class Contact extends Component {
                     size="35"
                     id="contactEmail"
                     name="contactEmail"
+                    value={form_email}
                     onChange={this.handleChange}
                   />
                 </div>
@@ -67,6 +95,7 @@ class Contact extends Component {
                     size="35"
                     id="contactSubject"
                     name="contactSubject"
+                    value={form_subject}
                     onChange={this.handleChange}
                   />
                 </div>
@@ -79,6 +108,7 @@ class Contact extends Component {
                     cols="50"
                     rows="15"
                     id="contactMessage"
+                    value={form_message}
                     name="contactMessage"
                   ></textarea>
                 </div>
