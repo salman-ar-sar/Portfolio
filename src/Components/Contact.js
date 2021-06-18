@@ -1,30 +1,35 @@
 import React, { Component } from "react";
 
 const encode = (data) => {
-   return Object.keys(data)
-       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-       .join("&");
- }
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
 
 class Contact extends Component {
-   constructor(props) {
-      super(props);
-      this.state = { form_name: "", form_email: "", form_subject: "", form_message: "" };
-    }
-
-   handleSubmit = e => {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", ...this.state })
-      })
-        .then(() => alert("Success!"))
-        .catch(error => alert(error));
-
-      e.preventDefault();
+  constructor(props) {
+    super(props);
+    this.state = {
+      form_name: "",
+      form_email: "",
+      form_subject: "",
+      form_message: "",
     };
+  }
 
-   handleChange = e => this.setState({ [e.target.name]: e.target.value });
+  handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+
+    e.preventDefault();
+  };
+
+  handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
   render() {
     if (this.props.data) {
@@ -55,7 +60,11 @@ class Contact extends Component {
 
         <div className="row">
           <div className="eight columns">
-            <form action="" method="post" id="contactForm" name="contactForm" onSubmit={this.handleSubmit} >
+            <form
+              id="contactForm"
+              name="contactForm"
+              onSubmit={this.handleSubmit}
+            >
               <fieldset>
                 <div>
                   <label htmlFor="contactName">
@@ -63,10 +72,10 @@ class Contact extends Component {
                   </label>
                   <input
                     type="text"
-                    defaultValue=""
+                    //   defaultValue=""
                     size="35"
                     id="contactName"
-                    name="contactName"
+                    name="form_name"
                     value={form_name}
                     onChange={this.handleChange}
                   />
@@ -78,10 +87,10 @@ class Contact extends Component {
                   </label>
                   <input
                     type="text"
-                    defaultValue=""
+                    //   defaultValue=""
                     size="35"
                     id="contactEmail"
-                    name="contactEmail"
+                    name="form_email"
                     value={form_email}
                     onChange={this.handleChange}
                   />
@@ -91,10 +100,10 @@ class Contact extends Component {
                   <label htmlFor="contactSubject">Subject</label>
                   <input
                     type="text"
-                    defaultValue=""
+                    //   defaultValue=""
                     size="35"
                     id="contactSubject"
-                    name="contactSubject"
+                    name="form_subject"
                     value={form_subject}
                     onChange={this.handleChange}
                   />
@@ -109,7 +118,8 @@ class Contact extends Component {
                     rows="15"
                     id="contactMessage"
                     value={form_message}
-                    name="contactMessage"
+                    name="form_message"
+                    onChange={this.handleChange}
                   ></textarea>
                 </div>
 
