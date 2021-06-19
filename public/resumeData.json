@@ -45,7 +45,7 @@
     ]
   },
   "resume": {
-    "skillmessage": "I'm a tinkerer and am always interested in playing around with new technologies but these are the ones that have really won me over",
+    "skillmessage": "I'm a tech geek who is always searching for new technologies. These are the ones that I use the most these days.",
     "education": [
       {
         "school": "University?",
@@ -77,44 +77,44 @@
     "skills": [
       {
         "name": "Python",
-        "description": "Java was my first programming language that I started using in college years ago. It is by far the language I am most familiar with in terms of data-structure and algorithm programming.",
+        "description": "Python is my favourite programming language. It is by far the language I am most familiar with in terms of data-structure and algorithm programming.",
         "image": "python.jpg"
       },
       {
-        "name": "Git",
-        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
-        "image": "git.jpg"
-      },
-      {
-        "name": "ReactJS",
-        "description": "I am fairly new to React and really did not like it at first. It has grown on me though and I will continue to use it going forward. I have built a ReactJS based resume-website template (link below in portfolio) which I used as a starting point for this personal site.",
-        "image": "react.jpg"
+        "name": "Solidity",
+        "description": "Solidity is a programming language designed for developing smart contracts that run on Ethereum. I did my last project with it and it was fascinating.",
+        "image": "Solidity.jpg"
       },
       {
         "name": "C++",
-        "description": "I enjoy MeteorJS for it's ease of configuration and its ability to get a full stack prototype up and running quickly. I used MeteorJS in a team for a Startup Programming class in UVIC in conjunction with React to build the MVP for Smirkspace (below in portfolio)",
+        "description": "C++ is the language I trust the most. It is reliable, insanely powerful and looks cool and geeky!",
         "image": "C++.jpg"
       },
-
       {
-        "name": "Node JS",
-        "description": "Node JS is my server-side scripting language of choice. The bulk of my experience with it has been in conjunction with MeteorJS-based projects",
-        "image": "node.jpg"
+        "name": "Git",
+        "description": "I use Git all the time before you never when you'll mess things up. I have used Git for all my recent projects and it has been really helpful.",
+        "image": "git.jpg"
       },
-      {
-        "name": "Django",
-        "description": "I use Bootstrap more often than not when designing the layout for my sites. It is the framework I am most familiar with and can therefore design more quickly than with others.",
-        "image": "Django.jpg"
-      },
+      
       {
         "name": "MySQL",
-        "description": "I have used many different database systems and am better educated and experienced with Relational Databases. However, for many applications, the ease of use of MongoDB better suits my needs and it is much more enjoyable to work with",
+        "description": "MySQL is my database of choice. It's simple, easy to understand and effortless to integrate.",
         "image": "MySQL.jpg"
       },
       {
         "name": "Heroku",
-        "description": "I use Heroku as my hosting platform for most of my projects because so far they are all unpaid and their free tier is convenient. I also appreciate its integration with Github for such simple deployment.",
+        "description": "I use Heroku for hosting platform most of my projects because they are so easy to deploy and maintain. Plus, the free tier is really good.",
         "image": "heroku.jpg"
+      },
+      {
+        "name": "ReactJS",
+        "description": "I recently started tinkering with ReactJS and its dependencies. It is an amazing tool for building powerful web apps effortlessly.",
+        "image": "react.jpg"
+      },
+      {
+        "name": "Django",
+        "description": "I discovered Django and how good it is while doing an assignment a while ago. A single framework that can build fully functional web app is pretty intriguing. I'm currently learning more.",
+        "image": "Django.jpg"
       }
     ]
   },
