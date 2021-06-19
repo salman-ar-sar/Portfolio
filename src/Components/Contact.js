@@ -10,10 +10,10 @@ class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      form_name: "",
-      form_email: "",
-      form_subject: "",
-      form_message: "",
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
     };
   }
 
@@ -33,16 +33,16 @@ class Contact extends Component {
 
   render() {
     if (this.props.data) {
-      var name = this.props.data.name;
-      var street = this.props.data.address.street;
-      var city = this.props.data.address.city;
-      var state = this.props.data.address.state;
-      var zip = this.props.data.address.zip;
-      var phone = this.props.data.phone;
-      // var email = this.props.data.email;
-      var message = this.props.data.contactmessage;
+      var our_name = this.props.data.name;
+      var our_street = this.props.data.address.street;
+      var our_city = this.props.data.address.city;
+      var our_state = this.props.data.address.state;
+      var our_zip = this.props.data.address.zip;
+      var our_phone = this.props.data.phone;
+      var our_email = this.props.data.email;
+      var our_message = this.props.data.contactmessage;
     }
-    const { form_name, form_email, form_subject, form_message } = this.state;
+    const { name, email, subject, message } = this.state;
 
     return (
       <section id="contact">
@@ -64,9 +64,6 @@ class Contact extends Component {
               id="contactForm"
               name="contactForm"
               onSubmit={this.handleSubmit}
-              // data-netlify="true"
-              // data-netlify-honeypot="bot-field"
-              // method="post"
             >
               <input type="hidden" name="form-name" value="contactForm" />
               <fieldset>
@@ -76,11 +73,10 @@ class Contact extends Component {
                   </label>
                   <input
                     type="text"
-                    //   defaultValue=""
                     size="35"
                     id="contactName"
-                    name="form_name"
-                    value={form_name}
+                    name="name"
+                    value={name}
                     onChange={this.handleChange}
                   />
                 </div>
@@ -91,11 +87,10 @@ class Contact extends Component {
                   </label>
                   <input
                     type="text"
-                    //   defaultValue=""
                     size="35"
                     id="contactEmail"
-                    name="form_email"
-                    value={form_email}
+                    name="email"
+                    value={email}
                     onChange={this.handleChange}
                   />
                 </div>
@@ -104,11 +99,10 @@ class Contact extends Component {
                   <label htmlFor="contactSubject">Subject</label>
                   <input
                     type="text"
-                    //   defaultValue=""
                     size="35"
                     id="contactSubject"
-                    name="form_subject"
-                    value={form_subject}
+                    name="subject"
+                    value={subject}
                     onChange={this.handleChange}
                   />
                 </div>
@@ -121,8 +115,8 @@ class Contact extends Component {
                     cols="50"
                     rows="15"
                     id="contactMessage"
-                    value={form_message}
-                    name="form_message"
+                    value={message}
+                    name="message"
                     onChange={this.handleChange}
                   ></textarea>
                 </div>
@@ -147,12 +141,14 @@ class Contact extends Component {
             <div className="widget widget_contact">
               <h4>Address and Phone</h4>
               <p className="address">
-                {name}
+                {our_name}
                 <br />
-                {street} <br />
-                {city}, {state} {zip}
+                {our_street} <br />
+                {our_city}, {our_state} {our_zip}
                 <br />
-                <span>{phone}</span>
+                <span>{our_phone}</span>
+                <span>{our_email}</span>
+                <span>{our_message}</span>
               </p>
             </div>
 
