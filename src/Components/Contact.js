@@ -62,9 +62,10 @@ class Contact extends Component {
           <div className="eight columns">
             <form
               id="contactForm"
-              name="contactForm"
+              // name="contactForm"
               onSubmit={this.handleSubmit}
             >
+              {/* <input type="hidden" name="form-name" value="contactForm" /> */}
               <fieldset>
                 <div>
                   <label htmlFor="contactName">
