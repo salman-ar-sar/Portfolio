@@ -54,7 +54,7 @@ class Contact extends Component {
           </div>
 
           <div className="ten columns">
-            <p className="lead">{message}</p>
+            <p className="lead">{our_message}</p>
           </div>
         </div>
 
@@ -146,9 +146,8 @@ class Contact extends Component {
                 {our_street} <br />
                 {our_city}, {our_state} {our_zip}
                 <br />
-                <span>{our_phone}</span>
-                <span>{our_email}</span>
-                <span>{our_message}</span>
+                <span>{our_phone}</span><br />
+                <span>{our_email}</span><br />
               </p>
             </div>
 
