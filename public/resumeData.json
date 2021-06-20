@@ -14,13 +14,13 @@
       "state": "Kerala",
       "zip": "682021"
     },
-    "website": "http://www.google.com",
-    "resumedownload": "http://google.com",
+    "website": "",
+    "resumedownload": "https://drive.google.com/file/d/1HYQkKJxS0X82Uf4FC8yAR1YCcdY9M6MB/view",
     "social": [
       {
-        "name": "facebook",
-        "url": "http://facebook.com/",
-        "className": "fa fa-facebook"
+        "name": "github",
+        "url": "https://github.com/salman-ar-sar",
+        "className": "fa fa-github"
       },
       {
         "name": "twitter",
@@ -33,14 +33,14 @@
         "className": "fa fa-linkedin"
       },
       {
-        "name": "instagram",
-        "url": "http://instagram.com/",
-        "className": "fa fa-instagram"
+        "name": "stack-overflow",
+        "url": "https://stackoverflow.com/users/16142197/salman-ar",
+        "className": "fa fa-stack-overflow"
       },
       {
-        "name": "github",
-        "url": "https://github.com/salman-ar-sar",
-        "className": "fa fa-github"
+        "name": "instagram",
+        "url": "https://www.instagram.com/salman_ar_sar/",
+        "className": "fa fa-instagram"
       }
     ]
   },
@@ -102,9 +102,9 @@
         "image": "MySQL.jpg"
       },
       {
-        "name": "Heroku",
-        "description": "I use Heroku for hosting platform most of my projects because they are so easy to deploy and maintain. Plus, the free tier is really good.",
-        "image": "heroku.jpg"
+        "name": "Heroku/Netlify",
+        "description": "I use Heroku/Netlify for hosting platform most of my projects because they are so easy to deploy, even deploy automatically from GitHub, and maintain. Plus, the free tier is really good.",
+        "image": "Deployment.png"
       },
       {
         "name": "ReactJS",
@@ -121,34 +121,28 @@
   "portfolio": {
     "projects": [
       {
-        "title": "Canadian Wanderlust",
-        "category": "My Travel Blog for my post-university travels",
-        "image": "canadian-wanderlust.jpg",
-        "url": "https://www.canadianwanderlust.com"
+        "title": "MedChain",
+        "category": "A Blockchain based EHR solution",
+        "image": "MedChain.png",
+        "url": "https://medchain.netlify.app/"
       },
       {
-        "title": "Fury Fighting Gear",
-        "category": "(offline now) A fighting gear company I started",
-        "image": "fury-fighting-gear.jpg",
-        "url": ""
+        "title": "Grocery Bag",
+        "category": "A Django web app for storing your Grocery shopping lists",
+        "image": "GroceryBag.png",
+        "url": "http://salmanar.pythonanywhere.com/"
       },
       {
-        "title": "Original Thai Food",
-        "category": "Website I built for a restaurant I like in Thailand",
-        "image": "original-thai-food.jpg",
+        "title": "TravelMate",
+        "category": "A website wanderlusts by wanderlusts. (not deployed yet)",
+        "image": "TravelMate.jpg",
         "url": ""
       },
       {
         "title": "Resume Website",
-        "category": "A React based resume website template",
+        "category": "A React based personal resume and portfolio website.",
         "image": "resume-website.jpg",
         "url": ""
-      },
-      {
-        "title": "Smirkspace",
-        "category": "(MVP Only) A React and Meteor based chat University project.",
-        "image": "smirkspace.jpg",
-        "url": "http://www.smirkspace.com"
       }
     ]
   },
