@@ -2,9 +2,9 @@
   "main": {
     "name": "Salman A",
     "occupation": "Software Developer",
-    "description": "Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
+    "description": "I'm a passionate Computer Science undergrad currently doing my final year. I love to tinker with technology",
     "image": "profilepic.jpg",
-    "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "bio": "I've loved technology since my teenages. Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
     "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
     "email": "salman.a.mec@gmail.com",
     "phone": "+91-9562532478",
@@ -23,14 +23,19 @@
         "className": "fa fa-github"
       },
       {
-        "name": "twitter",
-        "url": "https://twitter.com/Salman_A09",
-        "className": "fa fa-twitter"
-      },
-      {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/salman-ar/",
         "className": "fa fa-linkedin"
+      },
+      {
+        "name": "mail",
+        "url": "mailto:salman.a.mec@gmail.com",
+        "className": "fa fa-envelope"
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/Salman_A09",
+        "className": "fa fa-twitter"
       },
       {
         "name": "stack-overflow",
@@ -45,7 +50,7 @@
     ]
   },
   "resume": {
-    "skillmessage": "I'm a tech geek who is always searching for new technologies. These are the ones that I use the most these days.",
+    "skillmessage": "I'm a tech geek who is always searching for new technologies to conquer.",
     "education": [
       {
         "school": "University?",
@@ -77,43 +82,43 @@
     "skills": [
       {
         "name": "Python",
-        "description": "Python is my favourite programming language. It is by far the language I am most familiar with in terms of data-structure and algorithm programming.",
+        "description": "",
         "image": "python.jpg"
       },
       {
         "name": "Solidity",
-        "description": "Solidity is a programming language designed for developing smart contracts that run on Ethereum. I did my last project with it and it was fascinating.",
+        "description": "",
         "image": "Solidity.jpg"
       },
       {
         "name": "C++",
-        "description": "C++ is the language I trust the most. It is reliable, insanely powerful and looks cool and geeky!",
+        "description": "",
         "image": "C++.jpg"
       },
       {
         "name": "Git",
-        "description": "I use Git all the time before you never when you'll mess things up. I have used Git for all my recent projects and it has been really helpful.",
+        "description": "",
         "image": "git.jpg"
       },
       
       {
         "name": "MySQL",
-        "description": "MySQL is my database of choice. It's simple, easy to understand and effortless to integrate.",
+        "description": "",
         "image": "MySQL.jpg"
       },
       {
         "name": "Heroku/Netlify",
-        "description": "I use Heroku/Netlify for hosting platform most of my projects because they are so easy to deploy, even deploy automatically from GitHub, and maintain. Plus, the free tier is really good.",
-        "image": "Deployment.png"
+        "description": "",
+        "image": "Deployment.jpg"
       },
       {
         "name": "ReactJS",
-        "description": "I recently started tinkering with ReactJS and its dependencies. It is an amazing tool for building powerful web apps effortlessly.",
+        "description": "",
         "image": "react.jpg"
       },
       {
         "name": "Django",
-        "description": "I discovered Django and how good it is while doing an assignment a while ago. A single framework that can build fully functional web app is pretty intriguing. I'm currently learning more.",
+        "description": "",
         "image": "Django.jpg"
       }
     ]
@@ -133,15 +138,15 @@
         "url": "http://salmanar.pythonanywhere.com/"
       },
       {
+        "title": "EtherFund",
+        "category": "A crowdfunding platform built on the Ethereum blockchain network.",
+        "image": "EtherFund.jpg",
+        "url": "https://ether-fund.vercel.app/"
+      },
+      {
         "title": "TravelMate",
         "category": "A website wanderlusts by wanderlusts. (not deployed yet)",
         "image": "TravelMate.jpg",
-        "url": ""
-      },
-      {
-        "title": "Resume Website",
-        "category": "A React based personal resume and portfolio website.",
-        "image": "resume-website.jpg",
         "url": ""
       }
     ]

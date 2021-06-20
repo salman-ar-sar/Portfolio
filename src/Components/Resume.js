@@ -45,6 +45,21 @@ class Resume extends Component {
         <div className="row education">
           <div className="three columns header-col">
             <h1>
+              <span>Skills</span>
+            </h1>
+          </div>
+
+          <div>
+            <div className="nine columns main-col">
+              <p className="lead center">{skillmessage}</p>
+            </div>
+            <ul className="bgrid-quarters s-bgrid-thirds cf">{skills}</ul>
+          </div>
+        </div>
+
+        <div className="row work">
+          <div className="three columns header-col">
+            <h1>
               <span>Education</span>
             </h1>
           </div>
@@ -56,29 +71,14 @@ class Resume extends Component {
           </div>
         </div>
 
-        <div className="row work">
+        <div className="row skill">
           <div className="three columns header-col">
             <h1>
-              <span>Work</span>
+              <span>Experience</span>
             </h1>
           </div>
 
           <div className="nine columns main-col">{work}</div>
-        </div>
-
-        <div className="row skill">
-          <div className="three columns header-col">
-            <h1>
-              <span>Favorite Tech</span>
-            </h1>
-          </div>
-
-          <div>
-            <div className="nine columns main-col">
-              <p className="lead center">{skillmessage}</p>
-            </div>
-            <ul className="bgrid-quarters s-bgrid-thirds cf">{skills}</ul>
-          </div>
         </div>
       </section>
     );
