@@ -1,21 +1,21 @@
 {
   "main": {
     "name": "Salman A",
-    "occupation": "Software Developer",
-    "description": "I'm a passionate Computer Science undergrad currently doing my final year. I love to tinker with technology",
-    "image": "profilepic.jpg",
-    "bio": "I've loved technology since my teenages. Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "salman.a.mec@gmail.com",
+    "occupation": "Full Stack Developer",
+    "description": "I work at a startup named Hatio Innovations Private Limited as Software Engineer where I contribute to large scale fintech projects. I love to tinker with technology, watching movies/series and listening to music.",
+    "image": "profilepic.jpeg",
+    "bio": "I've loved technology since my teenages. Grounded and solution-oriented Software Development Engineer with experience in web development adept at motivating self and others. Passionate and enthusiastic in solving complex problems with modern technologies like Web3.",
+    "contactmessage": "Get in touch.",
+    "email": "salmana.ar@gmail.com",
     "phone": "+91-9562532478",
     "address": {
-      "street": "Infopark Rd",
+      "street": "Kakkanad",
       "city": "Cochin",
       "state": "Kerala",
-      "zip": "682021"
+      "zip": "682030"
     },
     "website": "",
-    "resumedownload": "https://drive.google.com/file/d/1HYQkKJxS0X82Uf4FC8yAR1YCcdY9M6MB/view",
+    "resumedownload": "https://drive.google.com/file/d/1A48QizMl-mVF9Dncfnm8Iv69TQ2phzki/view",
     "social": [
       {
         "name": "github",
@@ -53,42 +53,61 @@
     "skillmessage": "I'm a tech geek who is always searching for new technologies to conquer.",
     "education": [
       {
-        "school": "University?",
-        "degree": "Masters in Beer tasting",
-        "graduated": "April 2007",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school": "Govt. Model Engineering College, Kerala",
+        "degree": "B.Tech (CSE)",
+        "graduated": "July 2021",
+        "description": "Dived into the world of Computer Science. "
       },
       {
-        "school": "School #1 Maybe College?",
-        "degree": "What did you study 101",
-        "graduated": "March 2003",
+        "school": "PPM HSS, Kerala",
+        "degree": "Higher Secondary",
+        "graduated": "March 2017",
         "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
       }
     ],
     "work": [
       {
-        "company": "Awesome Design Studio",
-        "title": "Senior UX God ",
-        "years": "March 2010 - Present",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
-      },
-      {
-        "company": "Super Cool Studio",
-        "title": "Junior bug fixer",
-        "years": "March 2007 - February 2010",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company": "Hatio Innovation Pvt Ltd, Kochi",
+        "title": "Software Engineer",
+        "years": "March 2021 - Present",
+        "description": "Worked on a few of Fintech projects using a range of technologies including React on TypeScript, Springboot on Kotlin, PostgresSQL, etc. Gained hands-on experience on every aspect of a sizable project, including deployment and dockerization. Worked on a cross-platform mobile application using React Native. Worked on creating and integrating RESTful web services."
       }
     ],
     "skills": [
       {
-        "name": "Python",
+        "name": "HTML",
         "description": "",
-        "image": "python.jpg"
+        "image": "html.png"
+      },
+      {
+        "name": "CSS/SCSS",
+        "description": "",
+        "image": "scss.png"
+      },
+      {
+        "name": "TypeScript/JavaScript",
+        "description": "",
+        "image": "js-ts.jpg"
+      },
+      {
+        "name": "NextJS",
+        "description": "",
+        "image": "next_js.jpeg"
+      },
+      {
+        "name": "ReactJS",
+        "description": "",
+        "image": "react.jpg"
       },
       {
         "name": "Solidity",
         "description": "",
         "image": "Solidity.jpg"
+      },
+      {
+        "name": "Python",
+        "description": "",
+        "image": "Python.jpg"
       },
       {
         "name": "C++",
@@ -100,42 +119,36 @@
         "description": "",
         "image": "git.jpg"
       },
-      
       {
-        "name": "MySQL",
+        "name": "PostgreSQL",
         "description": "",
-        "image": "MySQL.jpg"
+        "image": "postgresql.jpg"
+      },
+      {
+        "name": "GraphQL",
+        "description": "",
+        "image": "graphql.png"
       },
       {
         "name": "Heroku/Netlify",
         "description": "",
         "image": "Deployment.jpg"
-      },
-      {
-        "name": "ReactJS",
-        "description": "",
-        "image": "react.jpg"
-      },
-      {
-        "name": "Django",
-        "description": "",
-        "image": "Django.jpg"
       }
     ]
   },
   "portfolio": {
     "projects": [
       {
+        "title": "T3 Blog",
+        "category": "A blog application",
+        "image": "t3-blog.jpg",
+        "url": "https://t3-blog-app.vercel.app/"
+      },
+      {
         "title": "MedChain",
         "category": "A Blockchain based EHR solution",
         "image": "MedChain.png",
         "url": "https://medchain.netlify.app/"
-      },
-      {
-        "title": "Grocery Bag",
-        "category": "A Django web app for storing your Grocery shopping lists",
-        "image": "GroceryBag.png",
-        "url": "http://salmanar.pythonanywhere.com/"
       },
       {
         "title": "EtherFund",
@@ -148,18 +161,6 @@
         "category": "A website wanderlusts by wanderlusts. (not deployed yet)",
         "image": "TravelMate.jpg",
         "url": ""
-      }
-    ]
-  },
-  "testimonials": {
-    "testimonials": [
-      {
-        "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user": "Kareem Abdul Jabbar"
-      },
-      {
-        "text": "That Salman must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user": "Steve Wozniak... impersonator"
       }
     ]
   }
